@@ -3,6 +3,7 @@
         <div class="uk-container uk-padding-large">
             <h1>{{ this.wordofday }}</h1>
             <p style="text-align: center">(C) arsanandha.xyz</p>
+            <p style="text-align: center">Made by Vue.JS</p>
         </div>
     </div>
 </template>
