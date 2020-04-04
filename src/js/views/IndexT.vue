@@ -14,6 +14,10 @@
         methods: {
             returnWordOfDay() {
                 let d = new Date();
+                let dayOf = d.getDay();
+                if (parseInt(d.getDay()) === 0) {
+                    dayOf = 7
+                }
                 let quote = [
                     'ทำงานวันใหม่ สดใสแข็งแรง',
                     'วันนี้ไม่มีไรมาก นอกจากคำว่าสวัสดี',
@@ -23,7 +27,7 @@
                     'สติไม่ดี แต่ดูแลดีนะ',
                     'ไปโบสถ์กันดีกว่า'
                 ];
-                return quote[d.getDate() - 1];
+                return quote[dayOf - 1];
             }
         },
         data() {
