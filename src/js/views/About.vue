@@ -1,5 +1,5 @@
 <template>
-    <div class="soon uk-container uk-padding-large">
+    <div class="uk-container uk-padding-large">
         <h1>อัศนันท์ไง อัศนันท์เอง</h1>
     </div>
 </template>
