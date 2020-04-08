@@ -1,7 +1,7 @@
 <template>
     <div>
         <vk-navbar>
-            <vk-navbar-logo slot="center"><img :src="require('../../../img/logo-01.svg')"/></vk-navbar-logo>
+            <vk-navbar-logo slot="center"><iframe :src="imgX"/></vk-navbar-logo>
         </vk-navbar>
         <router-view></router-view>
         <footer style="text-align: center">(C) Asanan Aphisitworachorch</footer>
@@ -10,7 +10,12 @@
 
 <script>
     export default {
-        name: "Main"
+        name: "Main",
+        data: function(){
+            return{
+                imgX: require('../../../img/logo-01.svg')
+            }
+        }
     }
 </script>
 
