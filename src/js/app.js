@@ -9,6 +9,10 @@ import IndexT from "./views/IndexT";
 import About from "./views/About";
 import Main from "./views/Main";
 import IndexTwentyFour from "./views/twentyfour/IndexTwentyFour";
+import IT20 from "./views/profile/IT20";
+import Katakorn from "./views/profile/Katakorn";
+import StudentCouncil from "./views/profile/StudentCouncil";
+import Suranivet7 from "./views/profile/Suranivet7";
 
 import '@vuikit/theme'
 
@@ -21,7 +25,11 @@ Vue.use(VueRouter)
 const Routes = [
     { path: '/', component: IndexT },
     { path: '/about', component: About },
-    { path: '/twentyfour', components: IndexTwentyFour }
+    { path: '/twentyfour', component: IndexTwentyFour },
+    { path: '/profile/it20', component: IT20 },
+    { path: '/profile/ktk', component: Katakorn },
+    { path: '/profile/sutsc', component: StudentCouncil },
+    { path: '/profile/s7', component: Suranivet7 }
 ];
 const router = new VueRouter({
     routes: Routes,

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 style="text-align: center">24Batch</h1>
+        <h1>24Batch</h1>
     </div>
 </template>
 
