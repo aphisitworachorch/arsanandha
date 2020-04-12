@@ -8,6 +8,7 @@ import VueRouter from 'vue-router'
 import IndexT from "./views/IndexT";
 import About from "./views/About";
 import Main from "./views/Main";
+import IndexTwentyFour from "./views/twentyfour/IndexTwentyFour";
 
 import '@vuikit/theme'
 
@@ -19,7 +20,8 @@ Vue.use(VueRouter)
 /** ROUTER **/
 const Routes = [
     { path: '/', component: IndexT },
-    { path: '/about', component: About }
+    { path: '/about', component: About },
+    { path: '/twentyfour', components: IndexTwentyFour }
 ];
 const router = new VueRouter({
     routes: Routes,
