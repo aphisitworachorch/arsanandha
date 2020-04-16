@@ -1,12 +1,19 @@
 <template>
     <div>
-        <h1>24Batch</h1>
+        <div style="text-align: center">
+            <iframe :src="imgX"/>
+        </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "IndexTwentyFour"
+        name: "IndexTwentyFour",
+        data: function(){
+            return{
+                imgX: require('../../../../img/weblogo-02.svg')
+            }
+        }
     }
 </script>
 
