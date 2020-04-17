@@ -1,4 +1,6 @@
 window.Vue = require('vue');
+import es6Promise from "es6-promise"
+es6Promise.polyfill()
 
 /** VUIKIT COMPONENTS **/
 // later in your source files
