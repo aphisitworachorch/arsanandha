@@ -6,6 +6,7 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.8.7",
     "@vuikit/icons": "^0.8.1",
     "@vuikit/theme": "^0.8.1",
     "cross-env": "^7.0.2",
