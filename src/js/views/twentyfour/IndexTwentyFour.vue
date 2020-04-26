@@ -27,5 +27,7 @@
 </script>
 
 <style scoped>
-
+    iframe {
+        height: 50%
+    }
 </style>
