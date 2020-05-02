@@ -1,14 +1,19 @@
 <template>
     <div>
         <div class="center uk-container uk-padding-large">
-            COMING SOON....
+            <img :src="myself">
         </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "IndexT"
+        name: "IndexT",
+        data: () => {
+            return{
+                myself: "https://avatars.githubusercontent.com/aphisitworachorch"
+            }
+        }
     }
 </script>
 

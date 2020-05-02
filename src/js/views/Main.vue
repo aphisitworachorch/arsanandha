@@ -13,7 +13,7 @@
 <script>
     export default {
         name: "Main",
-        data: function () {
+        data: () => {
             return {
                 imgX: require('../../../img/logo-01.svg')
             }

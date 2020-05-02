@@ -16,7 +16,7 @@
 <script>
     export default {
         name: "IndexTwentyFour",
-        data: function(){
+        data: () => {
             return{
                 imgX: require('../../../../img/weblogo-02.svg'),
                 bigLogo: require('../../../../img/SetupLogo-01.svg'),
