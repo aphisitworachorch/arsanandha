@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="uk-container-large uk-align-center">
-            <img width="65%" :src="s7Image"/>
+            <img class="uk-align-center" width="65%" :src="s7Image"/>
         </div>
     </div>
 </template>
