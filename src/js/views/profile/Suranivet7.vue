@@ -2,7 +2,9 @@
     <div>
         <div class="uk-container-large uk-align-center">
             <h3 style="text-align: center">S U R A N I V E T | S E 7 E N</h3>
-            <img class="uk-align-center" width="65%" :src="s7Image"/>
+            <div v-tilt="{speed: 500, perspective: 1200}">
+                <img class="uk-align-center" width="65%" :src="s7Image"/>
+            </div>
             <p style="text-align: center">Took on 5 March 2017 , 06:51 AM at Center of Library and Educational Media</p>
         </div>
     </div>

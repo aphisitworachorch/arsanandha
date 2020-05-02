@@ -1,6 +1,7 @@
 window.Vue = require('vue');
 import es6Promise from "es6-promise"
 es6Promise.polyfill()
+import VueTilt from 'vue-tilt.js'
 
 /** VUIKIT COMPONENTS **/
 // later in your source files
@@ -21,6 +22,7 @@ import '@vuikit/theme'
 Vue.use(Vuikit)
 Vue.use(VuikitIcons)
 Vue.use(VueRouter)
+Vue.use(VueTilt)
 /** END VUIKIT COMPONENTS **/
 
 /** ROUTER **/
