@@ -11,8 +11,7 @@
         name: "Suranivet7",
         methods: {
             listFriends: () => {
-
-                console.table(data.friendList)
+                console.table(friendList)
             }
         },
         data: () => {
@@ -52,8 +51,13 @@
                 }
             }
         },
+        computed: {
+            listFriends(){
+                return this.friendList.nameOfFriends;
+            }
+        },
         mounted() {
-            this.listFriends()
+            console.table(this.listFriends);
         }
     }
 </script>
