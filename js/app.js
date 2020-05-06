@@ -3613,6 +3613,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ForgiveWorapat"
 });
@@ -6937,6 +6946,41 @@ var render = function() {
               _c("br"),
               _vm._v(
                 "\n                Best Regards : arsanandha.xyz , Website author and tech-geeky guy\n            "
+              )
+            ]),
+            _vm._v(" "),
+            _c("hr"),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "uk-container",
+                staticStyle: { "text-align": "center" }
+              },
+              [
+                _vm._v("\n                For You : "),
+                _c("br"),
+                _vm._v(" "),
+                _c("iframe", {
+                  staticStyle: { "text-align": "center" },
+                  attrs: {
+                    src:
+                      "https://open.spotify.com/embed/playlist/5CmXWM7ui84MrSIly773wF",
+                    width: "600",
+                    height: "185",
+                    frameborder: "0",
+                    allowtransparency: "true",
+                    allow: "encrypted-media"
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("hr"),
+            _vm._v(" "),
+            _c("div", { staticClass: "uk-container" }, [
+              _vm._v(
+                "\n                Last, I'll Follow My Dreams that telling to you before endup a brother relationship :)\n            "
               )
             ])
           ],

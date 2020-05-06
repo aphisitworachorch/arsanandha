@@ -14,6 +14,15 @@
                     <br/>
                     Best Regards : arsanandha.xyz , Website author and tech-geeky guy
                 </div>
+                <hr/>
+                <div class="uk-container" style="text-align: center">
+                    For You : <br/>
+                    <iframe src="https://open.spotify.com/embed/playlist/5CmXWM7ui84MrSIly773wF" width="600" height="185" style="text-align: center" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <hr/>
+                <div class="uk-container">
+                    Last, I'll Follow My Dreams that telling to you before endup a brother relationship :)
+                </div>
             </vk-card>
         </div>
 
