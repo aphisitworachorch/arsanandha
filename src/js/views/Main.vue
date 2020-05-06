@@ -6,6 +6,7 @@
             </vk-navbar-logo>
         </vk-navbar>
         <router-view></router-view>
+        <br/>
         <footer style="text-align: center">(C) Asanan Aphisitworachorch</footer>
     </div>
 </template>

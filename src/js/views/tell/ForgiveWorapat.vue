@@ -15,8 +15,10 @@
                     Best Regards : arsanandha.xyz , Website author and tech-geeky guy
                 </div>
                 <hr/>
-                <div class="uk-container" style="text-align: center">
-                    For You : <br/>
+                <div class="uk-container">
+                    For You : Equilibrium of Dormitory Relationship <br/>
+                    " I Believe "Everythings can be back and destruct by itself , However Equilibrium is the best word to say" <br/>
+                    <br/>
                     <iframe src="https://open.spotify.com/embed/playlist/5CmXWM7ui84MrSIly773wF" width="600" height="185" style="text-align: center" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
                 <hr/>
