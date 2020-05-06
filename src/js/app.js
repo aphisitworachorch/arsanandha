@@ -16,6 +16,7 @@ import IT20 from "./views/profile/IT20";
 import Katakorn from "./views/profile/Katakorn";
 import StudentCouncil from "./views/profile/StudentCouncil";
 import Suranivet7 from "./views/profile/Suranivet7";
+import ForgiveWorapat from "./views/tell/ForgiveWorapat";
 
 import '@vuikit/theme'
 
@@ -33,7 +34,8 @@ const Routes = [
     { path: '/profile/it20', component: IT20 },
     { path: '/profile/ktk', component: Katakorn },
     { path: '/profile/sutsc', component: StudentCouncil },
-    { path: '/profile/s7', component: Suranivet7 }
+    { path: '/profile/s7', component: Suranivet7 },
+    { path: '/tell/def337a6a7f2207fc171b1277441c787', component: ForgiveWorapat }
 ];
 const router = new VueRouter({
     routes: Routes,
