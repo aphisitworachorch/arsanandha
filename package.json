@@ -9,6 +9,7 @@
     "@babel/polyfill": "^7.8.7",
     "@vuikit/icons": "^0.8.1",
     "@vuikit/theme": "^0.8.1",
+    "axios": "^0.19.2",
     "cross-env": "^7.0.2",
     "es6-promise": "^4.2.8",
     "granim": "^2.0.0",
@@ -16,7 +17,9 @@
     "sweetalert2": "^9.10.7",
     "uikit": "^3.3.7",
     "universal-tilt.js": "^2.0.6",
+    "vue-axios": "^2.1.5",
     "vue-router": "^3.1.6",
+    "vue-sweetalert2": "^3.0.5",
     "vue-tilt.js": "^1.1.1",
     "vuikit": "^0.8.10",
     "webpack-mix": "^3.0.0"
