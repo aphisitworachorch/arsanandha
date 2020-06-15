@@ -20,7 +20,7 @@ import VueSweetalert2 from 'vue-sweetalert2';
 
 import '@vuikit/theme'
 import 'sweetalert2/dist/sweetalert2.min.css';
-import VueMeta from 'vue-meta'
+import VueHead from 'vue-head'
 
 window.Vue = require('vue');
 es6Promise.polyfill()
@@ -30,7 +30,7 @@ Vue.use(VuikitIcons)
 Vue.use(VueRouter)
 Vue.use(VueTilt)
 Vue.use(VueSweetalert2);
-Vue.use(VueMeta);
+Vue.use(VueHead)
 
 Vue.prototype.$http = axios
 
@@ -77,6 +77,7 @@ const files = require.context('./', true, /\.vue$/i)
 files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 new Vue({
+    name: 'Arsanandha',
     el: '#app',
     router: router,
     render: h => h(Main)

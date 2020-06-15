@@ -7,25 +7,25 @@
 <script>
     export default {
         name: "About",
-        metaInfo: {
-            title: "About ARSANANDHA",
+        head: {
+            title: {
+                inner:"About ARSANANDHA"
+            },
             meta: [
-                {property: 'og:title', vmid:'og:title', content: 'About ARSANANDHA'},
+                {property: 'og:title', content: 'About ARSANANDHA'},
                 {
                     property: 'og:descrption',
-                    vmid:'og:description',
                     content: "I'm Arsanandha Aphisitworachorch , Web Developer in Vue , JS , Rust , PHP , Python , C#"
                 },
-                {property: 'og:image', vmid:'og:image',content: 'http://arsanandha.xyz/img/headline/headline.png'},
-                {property: 'og:url', vmid:'og:url',content: 'http://arsanandha.xyz/img/headline/headline.png'},
-                {name: 'twitter:title', vmid:'twitter:title',content: 'About ARSANANDHA'},
+                {property: 'og:image', content: 'http://arsanandha.xyz/img/headline/headline.png'},
+                {property: 'og:url', content: 'http://arsanandha.xyz/img/headline/headline.png'},
+                {name: 'twitter:title', content: 'About ARSANANDHA'},
                 {
                     name: 'twitter:description',
-                    vmid:'twitter:description',
                     content: "I'm Arsanandha Aphisitworachorch , Web Developer in Vue , JS , Rust , PHP , Python , C#"
                 },
-                {name: 'twitter:image', vmid:'twitter:image',content: 'http://arsanandha.xyz/img/headline/headline.png'},
-                {name: 'twitter:card', vmid:'twitter:card',content: 'summary_large_image'},
+                {name: 'twitter:image', content: 'http://arsanandha.xyz/img/headline/headline.png'},
+                {name: 'twitter:card', content: 'summary_large_image'},
             ]
         }
     }

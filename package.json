@@ -1,12 +1,14 @@
 {
   "scripts": {
-    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js",
-    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js",
-    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/webpack-mix/setup/webpack.config.js",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/webpack-mix/setup/webpack.config.js"
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.8.7",
+    "@babel/polyfill": "^7.10.1",
     "@vuikit/icons": "^0.8.1",
     "@vuikit/theme": "^0.8.1",
     "axios": "^0.19.2",
@@ -14,24 +16,31 @@
     "es6-promise": "^4.2.8",
     "granim": "^2.0.0",
     "lodash": "^4.17.15",
-    "sweetalert2": "^9.10.7",
-    "uikit": "^3.3.7",
+    "single-spa-vue": "^1.8.2",
+    "sweetalert2": "^9.15.1",
+    "uikit": "^3.5.4",
     "universal-tilt.js": "^2.0.6",
     "vue-axios": "^2.1.5",
+    "vue-head": "^2.2.0",
     "vue-meta": "^2.4.0",
-    "vue-router": "^3.1.6",
+    "vue-router": "^3.3.4",
     "vue-sweetalert2": "^3.0.5",
     "vue-tilt.js": "^1.1.1",
     "vuikit": "^0.8.10",
-    "webpack-mix": "^3.0.0"
+    "webpack": "^4.43.0"
   },
   "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
+    "http-server": "^0.12.3",
+    "laravel-mix": "^5.0.4",
     "node-sass": "^4.14.1",
+    "prerender-spa-plugin": "^3.4.0",
     "resolve-url-loader": "^3.1.0",
-    "sass": "^1.26.3",
+    "sass": "^1.26.8",
     "sass-loader": "^8.0.2",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "vue": "^2.6.11",
+    "vue-loader": "^15.9.2",
     "vue-template-compiler": "^2.6.11"
   }
 }
