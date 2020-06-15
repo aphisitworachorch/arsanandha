@@ -16,6 +16,9 @@
 <script>
     export default {
         name: "IndexTwentyFour",
+        metaInfo:{
+            title:"24Batch"
+        },
         data: () => {
             return{
                 imgX: require('../../../../img/weblogo-02.svg'),

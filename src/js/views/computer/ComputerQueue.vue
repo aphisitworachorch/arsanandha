@@ -33,6 +33,9 @@
 <script>
     export default {
         name: "ComputerQueue",
+        metaInfo: {
+            title:"Computer Queue"
+        },
         methods: {
             async formSubmit(e) {
                 const dataV = {
@@ -58,7 +61,11 @@
                                 icon: "success"
                             })
                         } else {
-
+                            this.$swal({
+                                title: "แจ้งเตือน",
+                                text: "ทำรายการไม่สำเร็จ",
+                                icon: "error"
+                            })
                         }
                     })
                     .catch(function (error) {

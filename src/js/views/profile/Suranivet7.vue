@@ -18,6 +18,9 @@
                 console.table(friendList)
             }
         },
+        metaInfo:{
+            title:"Suranivet 7 Friends"
+        },
         data: () => {
             return{
                 s7Image : require('../../../../img/s7/suranivet7sharp8.jpg'),

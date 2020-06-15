@@ -14,6 +14,9 @@
 <script>
     export default {
         name: "Main",
+        metaInfo:{
+            title:"Hello !"
+        },
         data: () => {
             return {
                 imgX: require('../../../img/logo-01.svg')

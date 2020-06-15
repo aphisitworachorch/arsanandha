@@ -9,6 +9,9 @@
 <script>
     export default {
         name: "IndexT",
+        metaInfo:{
+            title:"ARSANANDHA"
+        },
         data: () => {
             return{
                 myself: "https://avatars.githubusercontent.com/aphisitworachorch"

@@ -4,7 +4,10 @@
 
 <script>
     export default {
-        name: "Katakorn"
+        name: "Katakorn",
+        metaInfo:{
+            title:"Katakorn"
+        }
     }
 </script>
 
