@@ -17,13 +17,13 @@
                 },
                 {property: 'og:image', content: 'http://arsanandha.xyz/img/headline/headline.png'},
                 {property: 'og:url', content: 'http://arsanandha.xyz/img/headline/headline.png'},
-                {property: 'twitter:title', content: 'About ARSANANDHA'},
+                {name: 'twitter:title', content: 'About ARSANANDHA'},
                 {
-                    property: 'twitter:description',
+                    name: 'twitter:description',
                     content: "I'm Arsanandha Aphisitworachorch , Web Developer in Vue , JS , Rust , PHP , Python , C#"
                 },
-                {property: 'twitter:image', content: 'http://arsanandha.xyz/img/headline/headline.png'},
-                {property: 'twitter:card', content: 'summary_large_image'},
+                {name: 'twitter:image', content: 'http://arsanandha.xyz/img/headline/headline.png'},
+                {name: 'twitter:card', content: 'summary_large_image'},
             ]
         }
     }
