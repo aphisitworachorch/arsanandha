@@ -1,0 +1,47 @@
+{
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "@vuikit/icons": "^0.8.1",
+    "@vuikit/theme": "^0.8.1",
+    "axios": "^0.19.2",
+    "cross-env": "^7.0.2",
+    "es6-promise": "^4.2.8",
+    "granim": "^2.0.0",
+    "lodash": "^4.17.19",
+    "moment": "^2.27.0",
+    "single-spa-vue": "^1.8.2",
+    "sweetalert2": "^9.17.1",
+    "uikit": "^3.5.5",
+    "universal-tilt.js": "^2.0.6",
+    "vue-axios": "^2.1.5",
+    "vue-head": "^2.2.0",
+    "vue-meta": "^2.4.0",
+    "vue-router": "^3.3.4",
+    "vue-sweetalert2": "^3.0.6",
+    "vue-tilt.js": "^1.1.1",
+    "vuikit": "^0.8.10",
+    "webpack": "^4.44.0"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
+    "http-server": "^0.12.3",
+    "laravel-mix": "^5.0.4",
+    "node-sass": "^4.14.1",
+    "prerender-spa-plugin": "^3.4.0",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^8.0.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

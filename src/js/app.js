@@ -1,0 +1,93 @@
+import * as axios from "axios";
+import es6Promise from "es6-promise"
+import VueTilt from 'vue-tilt.js'
+import moment from "moment";
+import VueMeta from 'vue-meta';
+
+/** VUIKIT COMPONENTS **/
+// later in your source files
+import Vuikit from 'vuikit'
+import VuikitIcons from '@vuikit/icons'
+import VueRouter from 'vue-router'
+import IndexT from "./views/IndexT";
+import About from "./views/About";
+import Main from "./views/Main";
+import IndexTwentyFour from "./views/twentyfour/IndexTwentyFour";
+import IT20 from "./views/profile/IT20";
+import Katakorn from "./views/profile/Katakorn";
+import StudentCouncil from "./views/profile/StudentCouncil";
+import Suranivet7 from "./views/profile/Suranivet7";
+import ForgiveWorapat from "./views/tell/ForgiveWorapat";
+import ComputerQueue from "./views/computer/ComputerQueue";
+import VueSweetalert2 from 'vue-sweetalert2';
+
+import '@vuikit/theme'
+import 'sweetalert2/dist/sweetalert2.min.css';
+import VueHead from 'vue-head'
+import Sippanondha from "./views/profile/Sippanondha";
+
+window.Vue = require('vue');
+es6Promise.polyfill()
+
+Vue.use(Vuikit)
+Vue.use(VuikitIcons)
+Vue.use(VueRouter)
+Vue.use(VueTilt)
+Vue.use(VueSweetalert2);
+Vue.use(VueHead)
+Vue.use(VueMeta)
+
+Vue.prototype.$http = axios
+
+/** END VUIKIT COMPONENTS **/
+
+/** ROUTER **/
+const Routes = [
+    {
+        path: '/', component: IndexT
+    },
+    {
+        path: '/about', component: About
+    },
+    {
+        path: '/twentyfour', component: IndexTwentyFour
+    },
+    {
+        path: '/profile/it20', component: IT20
+    },
+    {
+        path: '/profile/ktk', component: Katakorn
+    },
+    {
+        path: '/profile/sutsc', component: StudentCouncil
+    },
+    {
+        path: '/profile/s7', component: Suranivet7
+    },
+    {
+        path: '/profile/sippanondha', component: Sippanondha
+    },
+    {
+        path: '/computer-queue', component: ComputerQueue
+    },
+    {
+        path: '/tell/def337a6a7f2207fc171b1277441c787', component: ForgiveWorapat
+    }
+];
+const router = new VueRouter({
+    routes: Routes,
+    mode: 'hash'
+});
+
+/** ROUTER **/
+
+const files = require.context('./', true, /\.vue$/i)
+files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+
+new Vue({
+    name: 'Arsanandha',
+    el: '#app',
+    router: router,
+    render: h => h(Main)
+});
+
