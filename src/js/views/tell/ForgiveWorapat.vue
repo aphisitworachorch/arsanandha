@@ -7,12 +7,14 @@
                     I'm so sorry about things in the past, <br/>
                     I'm intended to do that (eg. Boyfriend Relationship and Blocking your Connection without Reason)
                     <br/>
-                    I think now you're angry with me, and not forgive me. I feel bad :( <br/>
+                    Now I'm Realized for things in the past that I expressed to you.<br/>
+                    <br/>
+                    I think those aren't appropriate for both. because it makes us uncomfortable <br/>
                     <hr/>
                     In This Chance. If you see my message on my website, you should know I'm still alive and want to see
                     you <br/>
-                    At any time, please don't hate me :). If you have any problems, please contact me. <br/>
-                    You Know my Contact . see you :)
+                    At any time, We'll never leave on each other . If you have any problems, Please contact me. <br/>
+                    You know my Contact . See you :)
                     <br/>
                     Best Regards : arsanandha.xyz , Website author and tech-geeky guy
                 </div>
@@ -28,7 +30,7 @@
                 </div>
                 <hr/>
                 <div class="uk-container">
-                    Last, I'll Follow My Dreams that telling to you before endup a brother relationship :)
+                    Last, I'll Follow My Dreams that telling to you before เระ a brother relationship :)
                 </div>
             </vk-card>
         </div>
