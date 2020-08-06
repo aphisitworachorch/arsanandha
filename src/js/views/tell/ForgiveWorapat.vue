@@ -30,7 +30,7 @@
                 </div>
                 <hr/>
                 <div class="uk-container">
-                    Last, I'll Follow My Dreams that telling to you before เระ a brother relationship :)
+                    Last, I'll Follow My Dreams that telling to you before a brother relationship :)
                 </div>
             </vk-card>
         </div>

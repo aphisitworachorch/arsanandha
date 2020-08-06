@@ -1,6 +1,8 @@
 <template>
   <div class="uk-container uk-padding-large">
     <h1>Asanan Aphisitworachorch</h1>
+    <h4>Full-Stack Developer in Python / PHP (Laravel) with (Vue,jQuery,Vanilla) + (SCSS,SASS) / Graphic Designer</h4>
+    <h4><b>Unaccepted for Gray / Black Programming & Businesses or Black-box Activity</b></h4>
     <div class="uk-container">
       <main>
         <vk-card padding="medium">

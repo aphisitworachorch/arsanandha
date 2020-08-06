@@ -1,7 +1,9 @@
 <template>
     <div>
         <div class="center uk-container uk-padding-large">
+          <div v-tilt="{speed: 500, perspective: 1450}">
             <img :src="myself">
+          </div>
         </div>
     </div>
 </template>
