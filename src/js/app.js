@@ -19,13 +19,14 @@ import StudentCouncil from "./views/profile/StudentCouncil";
 import Suranivet7 from "./views/profile/Suranivet7";
 import ForgiveWorapat from "./views/tell/ForgiveWorapat";
 import ComputerQueue from "./views/computer/ComputerQueue";
+import Enroll from "./views/Katakorn7/Enroll";
+
 import VueSweetalert2 from 'vue-sweetalert2';
 
 import '@vuikit/theme'
 import 'sweetalert2/dist/sweetalert2.min.css';
 import VueHead from 'vue-head'
 import Sippanondha from "./views/profile/Sippanondha";
-import Enroll from "./views/Katakorn7/Enroll";
 
 window.Vue = require('vue');
 es6Promise.polyfill()
@@ -75,7 +76,7 @@ const Routes = [
         path: '/tell/def337a6a7f2207fc171b1277441c787', component: ForgiveWorapat
     },
     {
-        path: '/ktk/enrollment2020', component: Enroll
+        path: '/ktk/enrollment', component: Enroll
     }
 ];
 const router = new VueRouter({
