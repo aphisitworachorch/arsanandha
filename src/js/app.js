@@ -75,7 +75,7 @@ const Routes = [
         path: '/tell/def337a6a7f2207fc171b1277441c787', component: ForgiveWorapat
     },
     {
-        path: '/katakorn7/enroll', component: Enroll
+        path: '/ktk/enrollment2020', component: Enroll
     }
 ];
 const router = new VueRouter({
