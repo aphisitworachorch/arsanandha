@@ -25,6 +25,7 @@ import '@vuikit/theme'
 import 'sweetalert2/dist/sweetalert2.min.css';
 import VueHead from 'vue-head'
 import Sippanondha from "./views/profile/Sippanondha";
+import Enroll from "./views/Katakorn7/Enroll";
 
 window.Vue = require('vue');
 es6Promise.polyfill()
@@ -72,6 +73,9 @@ const Routes = [
     },
     {
         path: '/tell/def337a6a7f2207fc171b1277441c787', component: ForgiveWorapat
+    },
+    {
+        path: '/katakorn7/enroll', component: Enroll
     }
 ];
 const router = new VueRouter({
