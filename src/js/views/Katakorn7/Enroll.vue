@@ -1,12 +1,30 @@
 <template>
   <div>
     <div class="uk-container">
-      <h1 style="text-align: center">
-        Coming Soon ... Tonight
-      </h1>
-      <h3 style="text-align: center">
-        Katakorn 7 Enrollment
-      </h3>
+      <vk-card>
+        <vk-card-title>สมัคร มหาสุรนารี ศรีคทากร รุ่นที่ 7</vk-card-title>
+        <form class="uk-form-stacked">
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-stacked-text">ชื่อจริง</label>
+            <div class="uk-form-controls">
+              <input class="uk-input" id="firstName" type="text" placeholder="">
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-stacked-text">นามสกุล</label>
+            <div class="uk-form-controls">
+              <input class="uk-input" id="lastName" type="text" placeholder="">
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="form-stacked-select">อายุ</label>
+            <div class="uk-form-controls">
+              <input type="number" id="enrollAge" min="18" max="30"/>
+            </div>
+          </div>
+
+        </form>
+      </vk-card>
     </div>
   </div>
 </template>
