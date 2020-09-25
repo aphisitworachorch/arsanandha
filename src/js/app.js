@@ -27,6 +27,7 @@ import '@vuikit/theme'
 import 'sweetalert2/dist/sweetalert2.min.css';
 import VueHead from 'vue-head'
 import Sippanondha from "./views/profile/Sippanondha";
+import Invite from "./views/invitation/Invite";
 
 window.Vue = require('vue');
 es6Promise.polyfill()
@@ -77,6 +78,9 @@ const Routes = [
     },
     {
         path: '/ktk/enrollment', component: Enroll
+    },
+    {
+        path: '/invite/grad2020', component: Invite
     }
 ];
 const router = new VueRouter({
