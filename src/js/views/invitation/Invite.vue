@@ -5,7 +5,7 @@
       <main>
         <vk-card padding="medium">
           <h3>
-            You're Invited to Graduation Ceremony ! <br/>
+            You're Invited to Graduation Celebrating ! <br/>
             Remaining
             {{ yearBd }} Years , {{ monthBd }} Months ,
             {{ dayBd }} Days ,
@@ -23,7 +23,7 @@
                   <div class="uk-container">
                     <h2>6 Nov</h2>
                     <br/>
-                    <span>Pre-Graduation Ceremony</span>
+                    <span>Pre-Graduation Celebrating</span>
                     <br/>
                     <vk-label slot="badge"><span>Availability 08:00-22:00</span></vk-label>
                   </div>
@@ -34,7 +34,7 @@
                   <div class="uk-container">
                     <h2>7 Nov</h2>
                     <br/>
-                    <span>Pre-Graduation Ceremony</span>
+                    <span>Pre-Graduation Celebrating</span>
                     <br/>
                     <vk-label slot="badge"><span>Availability 08:00-22:00</span></vk-label>
                   </div>
@@ -45,20 +45,9 @@
                   <div class="uk-container">
                     <h2>8 Nov</h2>
                     <br/>
-                    <span>Pre-Graduation Ceremony</span>
+                    <span>Pre-Graduation Celebrating</span>
                     <br/>
                     <vk-label slot="badge"><span>Availability 08:00-22:00</span></vk-label>
-                  </div>
-                </vk-card>
-            </div>
-            <div>
-                <vk-card>
-                  <div class="uk-container">
-                    <h2>9 Nov</h2>
-                    <br/>
-                    <span>Graduation Ceremony</span>
-                    <br/>
-                    <vk-label slot="badge"><span>Availability 15:00-22:00</span></vk-label>
                   </div>
                 </vk-card>
             </div>
@@ -72,7 +61,7 @@
 <script>
 import moment from 'moment';
 moment.locale('en');
-let birthDayData = moment(new Date(2020, 11, 9, 9, 0, 0));
+let birthDayData = moment(new Date(2020, 11, 6, 9, 0, 0));
 export default {
       name: "About",
       metaInfo: {
@@ -88,7 +77,7 @@ export default {
           secBd:"",
           milsecBd:"",
           bData: birthDayData.format('LLLL'),
-          place:"at Suraphat 2 , Suranaree University of Technology, Thailand"
+          place:"at Anywhere 📌"
         }
       },
       /* birthday() use for birthday data */
