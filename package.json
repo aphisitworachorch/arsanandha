@@ -15,7 +15,7 @@
     "cross-env": "^7.0.2",
     "es6-promise": "^4.2.8",
     "granim": "^2.0.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "single-spa-vue": "^1.8.2",
     "sweetalert2": "^9.15.1",
     "uikit": "^3.5.4",
