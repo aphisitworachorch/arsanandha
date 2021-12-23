@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'apFont': ['"Space Mono"', 'monospace']
+        'apFont': ['"Tenor Sans"', 'sans-serif']
       }
     },
   },
