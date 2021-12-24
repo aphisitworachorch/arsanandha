@@ -58,7 +58,7 @@ export default {
           minutes:""
         }
       },
-      typedText:['Roses are red 🌹️. Violets are blue 💐️','arsanandha.xyz will open in',`${openDate.toLocaleString(DateTime.DATETIME_FULL)}`]
+      typedText:['Roses are red 🌹️. Violets are blue 💐️','arsanandha.xyz will open in',`${openDate.setLocale('en-US').toLocaleString(DateTime.DATETIME_FULL)}`]
     }
   },
   methods:{
@@ -100,11 +100,7 @@ export default {
 }
 
 .big-text-landing {
-  @apply text-3xl font-bold font-apFont
-}
-
-.big-text-landing-left {
-  @apply text-3xl font-bold text-left
+  @apply text-3xl font-bold font-apFont text-left
 }
 
 .small-text-timer {

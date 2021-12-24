@@ -11,11 +11,14 @@ export default {
     title:'arsanandha.xyz',
     meta:[
       ...createSEOMeta({
+        author: "Arsanandha Aphisitworachorch",
         title: "arsanandha.xyz",
         description: "Just site. null",
         image: require('assets/images/og/headline.png'),
         url: "https://arsanandha.xyz",
         cardType: "summary_large_image",
+        twitterCreator: "@arsanandha",
+        type: "website"
       })
     ]
   }
