@@ -44,7 +44,7 @@ export default {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind screens;
+@tailwind variants;
 html {
   scroll-behavior: smooth;
 }
