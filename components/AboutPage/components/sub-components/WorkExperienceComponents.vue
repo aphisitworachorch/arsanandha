@@ -117,11 +117,11 @@ export default {
   @apply w-full md:w-3/12 xl:w-4/12
 }
 
-//.imageProfile {
-//  @apply object-cover xl:rounded-2xl lg:rounded-2xl sm:rounded-2xl 2xl:rounded-3xl rounded-2xl 2xl:w-5/12 2xl:mt-10 xl:w-5/12 xl:mt-10 lg:w-5/12 lg:mt-10 md:w-5/12 md:mt-9 sm:w-5/12 sm:mt-8
-//}
-//
-//.custom-hr {
-//  @apply pb-2.5 pt-2.5
-//}
+.imageProfile {
+  @apply object-cover xl:rounded-2xl lg:rounded-2xl sm:rounded-2xl 2xl:rounded-3xl rounded-2xl 2xl:w-5/12 2xl:mt-10 xl:w-5/12 xl:mt-10 lg:w-5/12 lg:mt-10 md:w-5/12 md:mt-9 sm:w-5/12 sm:mt-8
+}
+
+.custom-hr {
+  @apply pb-2.5 pt-2.5
+}
 </style>
