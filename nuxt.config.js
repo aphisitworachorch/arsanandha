@@ -15,12 +15,13 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: ''},
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap'}
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/css/glassmorphism.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

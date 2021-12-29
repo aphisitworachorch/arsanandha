@@ -81,7 +81,7 @@ export default {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind screens;
+@tailwind variants;
 
 .mainLanding {
   @apply h-screen w-screen flex flex-wrap items-center px-6 lg:px-32 text-white relative backdrop-brightness-50 backdrop-grayscale
