@@ -17,6 +17,7 @@ module.exports = {
   plugins: [
     require('tailwindcss-filters'),
     require('tailwind-scrollbar-hide'),
+    require('tw-elements/dist/plugin'),
     require('tailwindcss-animatecss')({
       classes: ['animate__animated', 'animate__fadeIn', 'animate__bounceIn', 'animate__lightSpeedOut', 'animate__fadeInUp'],
       settings: {
@@ -28,6 +29,9 @@ module.exports = {
         animationDelaySpeed: 1000
       },
       variants: ['responsive', 'hover', 'reduced-motion'],
+    }),
+    require("@tailwindcss/forms")({
+      strategy: 'class',
     }),
   ],
 }

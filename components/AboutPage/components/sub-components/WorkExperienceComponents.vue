@@ -1,14 +1,14 @@
 <template>
   <div class="mainLanding">
     <section class="left-division">
-      <h2 class="text-3xl pb-5 font-bold font-apFont">Photos at Workplaces</h2>
-      <div class="flex flex-row">
-        <div class="p-2.5" v-for="ix in imageProfile">
-          <kinesis-container>
-            <kinesis-element type="depth" :strength="20">
-              <img class="w-52 h-52 rounded-2xl object-cover aspect-square" :src="ix" alt="1"/>
-            </kinesis-element>
-          </kinesis-container>
+      <div class="sm:invisible md:visible lg:visible xl:visible 2xl:visible">
+        <h2 class="text-3xl pb-5 pt-5 font-bold font-apFont">Photos at Workplaces</h2>
+        <div class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner overflow-hidden">
+            <div class="carousel-item p-2.5 max-w-96 max-h-96" v-for="(ix,index) in imageProfile" :class="index === 0 ? 'active' : ''">
+              <img class="max-w-80 max-h-80 rounded-2xl object-cover aspect-square" :src="ix" :alt="index"/>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -17,10 +17,10 @@
         <h3 class="font-apFont text-left text-lg pb-3 font-semibold">
           Work Experiences <br/>
         </h3>
-        <div class="overflow-scroll scrollbar-hide" style="height: 455px;">
+        <div class="overflow-scroll scrollbar-hide" style="height: 465px;">
           <div class="container" v-for="work in workHis">
             <div class="container glassmorphism p-5 animate__animated animate__fadeInUp" :class="work.negative ? 'bg-black' : work.color">
-              <img :src="work.img_logo" :alt="work.name" class="p-5 h-20"/>
+              <img :src="work.img_logo" :alt="work.name" class="p-5"/>
               <h2 class="font-apFont text-left text-xl font-bold" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
                 {{ work.name }}
               </h2>
@@ -79,7 +79,7 @@ export default {
           "position":"Fullstack Web Developers",
           "color":"bg-blue-300",
           "negative":false,
-          "img_logo":"https://www.3samut.com/uploads/logo/default_logo_korat_gyzj29zt6816167343198782bd13597612b78534f6c648a111d3.png",
+          "img_logo":"https://www.3samut.com/uploads/logo/default_logo_korat_ztsp8pf2f31575087472_koratcom9.png",
           "white_fonts":true
         },
         {
