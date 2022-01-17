@@ -1,17 +1,20 @@
 <template>
   <div class="scroll-smooth hover:scroll-auto">
     <IntroComponents></IntroComponents>
-    <hr class="items-center pb-2.5 pt-2.5"/>
+    <div class="items-center pb-2.5 pt-5"></div>
     <WorkExperienceComponents></WorkExperienceComponents>
+    <div class="items-center pb-2.5 pt-5"></div>
+    <ExtracurricularComponents></ExtracurricularComponents>
   </div>
 </template>
 
 <script>
 import WorkExperienceComponents from "./sub-components/WorkExperienceComponents";
 import IntroComponents from "./sub-components/IntroComponents";
+import ExtracurricularComponents from "./sub-components/ExtracurricularComponents";
 export default {
   name: "AboutMainComponents",
-  components: {IntroComponents, WorkExperienceComponents}
+  components: {ExtracurricularComponents, IntroComponents, WorkExperienceComponents}
 }
 </script>
 

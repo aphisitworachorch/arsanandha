@@ -4,10 +4,18 @@
       <div class="logo">
         <!--            <kinesis-container>-->
         <!--              <kinesis-element type="depth" :strength="25">-->
-        <img :src="img.square" alt="arsanandha.xyz Logo" class="w-24 h-24"/>
-        <img :src="img.long" alt="arsanandha.xyz Logo"/>
+        <img :src="img.square" alt="arsanandha.xyz Logo" class="w-36 h-36"/>
+<!--        <img :src="img.long" alt="arsanandha.xyz Logo"/>-->
         <!--              </kinesis-element>-->
         <!--            </kinesis-container>-->
+      </div>
+      <div class="text-center flex flex-row">
+        <div>
+          <router-link to="/about" class="text-white font-apFont text-lg p-2.5">About</router-link>
+        </div>
+        <div>
+          <router-link to="/contacts" class="text-white font-apFont text-lg p-2.5">Contacts</router-link>
+        </div>
       </div>
     </section>
     <br/>
@@ -33,7 +41,7 @@
 import { VueTypedJs } from "vue-typed-js";
 import { DateTime } from "luxon";
 
-const openDate = DateTime.local(2022,1,20,19,20);
+const openDate = DateTime.local(2022,2,22,22,22);
 const nowDate = DateTime.now();
 export default {
   name: "LandingSlideComponents",
@@ -58,7 +66,7 @@ export default {
           minutes:""
         }
       },
-      typedText:['Roses are red 🌹️. Violets are blue 💐️','arsanandha.xyz will open in',`${openDate.setLocale('en-US').toLocaleString(DateTime.DATETIME_FULL)}`]
+      typedText:['No more things to say.','arsanandha.xyz will open in',`${openDate.setLocale('en-US').toLocaleString(DateTime.DATETIME_FULL)}`]
     }
   },
   methods:{

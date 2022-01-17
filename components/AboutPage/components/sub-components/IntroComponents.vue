@@ -5,12 +5,12 @@
     </section>
     <section class="right-division">
       <img class="pt-2 pb-2" :src="logo.long" alt="arsanandha.xyz Logo"/>
-      <div class="container pt-5 pl-2">
+      <div class="container">
         <h2 class="font-apFont font-bold text-left text-2xl">Arsanandha Aphisitworachorch</h2>
         <h3 class="font-apFont text-left text-xl">Fullstack Developer.</h3>
       </div>
       <hr class="custom-hr"/>
-      <div class="container pt-5 pl-2">
+      <div class="container">
         <p class="font-apFont text-left text-lg font-semibold">
           Based on PHP / JS / TS / Go / Vue / Python <br/>
         </p>
@@ -56,7 +56,7 @@ export default {
 }
 
 .imageProfile {
-  @apply object-cover xl:rounded-2xl lg:rounded-2xl sm:rounded-2xl 2xl:rounded-3xl rounded-2xl 2xl:w-5/12 2xl:mt-10 xl:w-5/12 xl:mt-10 lg:w-5/12 lg:mt-10 md:w-5/12 md:mt-9 sm:w-5/12 sm:mt-8
+  @apply object-cover xl:rounded-2xl lg:rounded-2xl sm:rounded-2xl 2xl:rounded-3xl rounded-2xl 2xl:w-5/12 2xl:mt-10 xl:w-5/12 xl:mt-10 lg:w-5/12 lg:mt-10 md:w-5/12 md:mt-9 sm:w-5/12 sm:mt-8 w-80
 }
 
 .custom-hr {

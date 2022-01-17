@@ -18,12 +18,16 @@ export default {
       imageSet:[
         require('assets/images/slider/gif-1-act.gif'),
         require('assets/images/slider/slider-7-act.jpg'),
-        require('assets/images/slider/slider-9-spn.jpg')
+        require('assets/images/slider/slider-9-spn.jpg'),
+        require('assets/images/slider/slider-12-coop.jpg'),
+        require('assets/images/workplace/IMG_4051.jpg')
       ],
       photoCaption:[
         'Dormitory Committee (2018)',
         'Dormitory Committee (2018) (Photo Group)',
-        'Photo with Sippanondha Camp Friends'
+        'Photo with Sippanondha Camp Friends (2017)',
+        'Co-operative Education with Friends and Employee (2020)',
+        'Photo with Friends at (Waan ^ D) with ApplicationDD Friends (2021)'
       ],
       randomPosition:null
     }
