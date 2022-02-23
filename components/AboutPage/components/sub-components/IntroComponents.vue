@@ -13,9 +13,24 @@
       <div class="container">
         <p class="font-apFont text-left text-lg font-semibold">
           Based on PHP / JS / TS / Go / Vue / Python <br/>
+          Powered by Docker <br/>
         </p>
+        <br/>
         <p class="font-apFont text-left text-lg text-green-700">
           MBTI : INFJ <br/>
+        </p>
+        <br/>
+        <p class="font-apFont text-left">
+          <b class="text-lg">Projects on Hand</b> <br/>
+          - Social-related Project Management (NestJS / TypeScript / Docker / MinIO / ElastiSearch) <br/>
+          - Staff Management System (PHP / Microsoft SQL Server)
+        </p>
+        <br/>
+        <p class="font-apFont text-left">
+          <b class="text-lg">English Proficiency Examination</b> <br/>
+          - TOEIC : Unavailable <br/>
+          - IELTS : Unavailable <br/>
+          - CEFR : A2
         </p>
       </div>
     </section>

@@ -9,14 +9,6 @@
         <!--              </kinesis-element>-->
         <!--            </kinesis-container>-->
       </div>
-      <div class="text-center flex flex-row">
-        <div>
-          <router-link to="/about" class="text-white font-apFont text-lg p-2.5">About</router-link>
-        </div>
-        <div>
-          <router-link to="/contacts" class="text-white font-apFont text-lg p-2.5">Contacts</router-link>
-        </div>
-      </div>
     </section>
     <br/>
     <section class="right-logo">

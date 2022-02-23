@@ -17,21 +17,19 @@
         <h3 class="font-apFont text-left text-lg pb-3 font-semibold">
           Extracurriculars Activity <br/>
         </h3>
-        <div class="overflow-scroll scrollbar-hide" style="height: 465px;">
-          <div class="container" v-for="work in extraCHis">
-            <div class="container glassmorphism p-5 animate__animated animate__fadeInUp" :class="work.negative ? 'bg-black' : work.color">
-              <h2 class="font-apFont text-left text-xl font-bold" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
-                {{ work.name }}
-              </h2>
-              <h3 class="font-apFont text-left text-lg" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
-                {{ work.position }}
-              </h3>
-              <h4 class="font-apFont text-left text-lg" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
-                From : {{ work.from }} / To : {{ work.to }}
-              </h4>
-            </div>
-            <br/>
+        <div class="container" v-for="work in extraCHis">
+          <div class="container glassmorphism p-5 animate__animated animate__fadeInUp" :class="work.negative ? 'bg-black' : work.color">
+            <h2 class="font-apFont text-left text-xl font-bold" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
+              {{ work.name }}
+            </h2>
+            <h3 class="font-apFont text-left text-lg" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
+              {{ work.position }}
+            </h3>
+            <h4 class="font-apFont text-left text-lg" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
+              From : {{ work.from }} / To : {{ work.to }}
+            </h4>
           </div>
+          <br/>
         </div>
       </div>
     </section>

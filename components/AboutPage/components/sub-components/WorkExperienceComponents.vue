@@ -17,22 +17,20 @@
         <h3 class="font-apFont text-left text-lg pb-3 font-semibold">
           Work Experiences <br/>
         </h3>
-        <div class="overflow-scroll scrollbar-hide" style="height: 465px;">
-          <div class="container" v-for="work in workHis">
-            <div class="container glassmorphism p-5 animate__animated animate__fadeInUp" :class="work.negative ? 'bg-black' : work.color">
-              <img :src="work.img_logo" :alt="work.name" class="p-5"/>
-              <h2 class="font-apFont text-left text-xl font-bold" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
-                {{ work.name }}
-              </h2>
-              <h3 class="font-apFont text-left text-lg" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
-                {{ work.position }}
-              </h3>
-              <h4 class="font-apFont text-left text-lg" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
-                From : {{ work.from }} / To : {{ work.to }}
-              </h4>
-            </div>
-            <br/>
+        <div class="container" v-for="work in workHis">
+          <div class="container glassmorphism p-5 animate__animated animate__fadeInUp" :class="work.negative ? 'bg-black' : work.color">
+            <img :src="work.img_logo" :alt="work.name" class="p-5"/>
+            <h2 class="font-apFont text-left text-xl font-bold" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
+              {{ work.name }}
+            </h2>
+            <h3 class="font-apFont text-left text-lg" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
+              {{ work.position }}
+            </h3>
+            <h4 class="font-apFont text-left text-lg" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
+              From : {{ work.from }} / To : {{ work.to }} Duration {{ `${work.month.years} Years` }} {{ `${work.month.months} Months`}} {{ `${work.month.days} Days `}}
+            </h4>
           </div>
+          <br/>
         </div>
       </div>
     </section>
@@ -60,7 +58,8 @@ export default {
           "color":"bg-blue-900",
           "negative":false,
           "img_logo":"https://cdn2.hubspot.net/hub/4349773/hubfs/Benchmark_R_1CWhite.png?width=223&name=Benchmark_R_1CWhite.png",
-          "white_fonts":true
+          "white_fonts":true,
+          "month": DateTime.local(2020,6,30,18,0,0).diff(DateTime.local(2020,3,2,9,0,0),["years", "months", "days", "hours"]).toObject()
         },
         {
           "name":"Bizpotential",
@@ -70,7 +69,8 @@ export default {
           "color":"bg-orange-500",
           "negative":true,
           "img_logo":"https://www.bizpotential.com/images/logo_web_4.png",
-          "white_fonts":true
+          "white_fonts":true,
+          "month": DateTime.local(2020,6,30,18,0,0).diff(DateTime.local(2020,3,2,9,0,0),["years", "months", "days", "hours"]).toObject()
         },
         {
           "name":"Korat.com",
@@ -80,17 +80,19 @@ export default {
           "color":"bg-blue-300",
           "negative":false,
           "img_logo":"https://www.3samut.com/uploads/logo/default_logo_korat_ztsp8pf2f31575087472_koratcom9.png",
-          "white_fonts":true
+          "white_fonts":true,
+          "month": DateTime.local(2021,5,30,9,0,0).diff(DateTime.local(2020,11,17,9,0,0),["years", "months", "days", "hours"]).toObject()
         },
         {
           "name":"ApplicationDD",
           "from":DateTime.local(2021,6,1,10,0,0).toISODate(),
-          "to":DateTime.now().toISODate(),
+          "to":"Present",
           "position":"Backend Developers",
           "color":"bg-red-700",
           "negative":false,
           "img_logo":"https://www.applicationdd.com/img/logo_edit_b.png",
-          "white_fonts":true
+          "white_fonts":true,
+          "month": DateTime.now().diff(DateTime.local(2021,6,1,10,0,0),["years", "months", "days", "hours"]).toObject()
         }
       ]
     }

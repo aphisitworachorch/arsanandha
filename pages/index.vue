@@ -1,5 +1,7 @@
 <template>
-  <LandingComponents></LandingComponents>
+  <div>
+    <LandingComponents></LandingComponents>
+  </div>
 </template>
 
 <script>
