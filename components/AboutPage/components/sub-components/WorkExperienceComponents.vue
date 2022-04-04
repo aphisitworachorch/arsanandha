@@ -17,21 +17,24 @@
         <h3 class="font-apFont text-left text-lg pb-3 font-semibold">
           Work Experiences <br/>
         </h3>
-        <div class="container" v-for="work in workHis">
-          <div class="container glassmorphism p-5 animate__animated animate__fadeInUp" :class="work.negative ? 'bg-black' : work.color">
-            <img :src="work.img_logo" :alt="work.name" class="p-5"/>
-            <h2 class="font-apFont text-left text-xl font-bold" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
-              {{ work.name }}
-            </h2>
-            <h3 class="font-apFont text-left text-lg" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
-              {{ work.position }}
-            </h3>
-            <h4 class="font-apFont text-left text-lg" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
-              From : {{ work.from }} / To : {{ work.to }} Duration {{ `${work.month.years} Years` }} {{ `${work.month.months} Months`}} {{ `${work.month.days} Days `}}
-            </h4>
+        <div class="overflow-y-auto" style="max-height: 460px;">
+          <div class="container" v-for="work in workHis">
+            <div class="container glassmorphism p-5 animate__animated animate__fadeInUp" :class="work.negative ? 'bg-black' : work.color">
+              <img :src="work.img_logo" :alt="work.name" class="p-5 max-h-16"/>
+              <h2 class="font-apFont text-left text-xl font-bold" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
+                {{ work.name }}
+              </h2>
+              <h3 class="font-apFont text-left text-lg" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
+                {{ work.position }}
+              </h3>
+              <h4 class="font-apFont text-left text-lg" :class="work.negative || work.white_fonts ? 'text-white' : 'text-black'">
+                From : {{ work.from }} / To : {{ work.to }} <br/> Duration {{ `${work.month.years} Years` }} {{ `${work.month.months} Months`}} {{ `${work.month.days} Days `}}
+              </h4>
+            </div>
+            <br/>
           </div>
-          <br/>
         </div>
+
       </div>
     </section>
   </div>
@@ -112,7 +115,7 @@ export default {
 }
 
 .left-division {
-  @apply w-full md:w-9/12 xl:w-8/12
+  @apply w-full md:w-9/12 xl:w-8/12 pt-16
 }
 
 .right-division {

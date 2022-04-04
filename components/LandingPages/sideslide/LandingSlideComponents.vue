@@ -33,7 +33,7 @@
 import { VueTypedJs } from "vue-typed-js";
 import { DateTime } from "luxon";
 
-const openDate = DateTime.local(2022,2,22,22,22);
+const openDate = DateTime.local(2022,6,1,9,0);
 const nowDate = DateTime.now();
 export default {
   name: "LandingSlideComponents",
@@ -58,7 +58,7 @@ export default {
           minutes:""
         }
       },
-      typedText:['No more things to say.','arsanandha.xyz will open in',`${openDate.setLocale('en-US').toLocaleString(DateTime.DATETIME_FULL)}`]
+      typedText:[':)','see you at',`${openDate.setLocale('en-US').toLocaleString(DateTime.DATETIME_FULL)}`]
     }
   },
   methods:{

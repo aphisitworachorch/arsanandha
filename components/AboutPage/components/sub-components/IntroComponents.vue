@@ -7,7 +7,7 @@
       <img class="pt-2 pb-2" :src="logo.long" alt="arsanandha.xyz Logo"/>
       <div class="container">
         <h2 class="font-apFont font-bold text-left text-2xl">Arsanandha Aphisitworachorch</h2>
-        <h3 class="font-apFont text-left text-xl">Fullstack Developer.</h3>
+        <h3 class="font-apFont text-left text-xl">Backend Developer.</h3>
       </div>
       <hr class="custom-hr"/>
       <div class="container">
@@ -22,7 +22,7 @@
         <br/>
         <p class="font-apFont text-left">
           <b class="text-lg">Projects on Hand</b> <br/>
-          - Social-related Project Management (NestJS / TypeScript / Docker / MinIO / ElastiSearch) <br/>
+          - Social-related Project Management (NestJS / TypeScript / Docker / MinIO / ElasticSearch) <br/>
           - Staff Management System (PHP / Microsoft SQL Server)
         </p>
         <br/>

@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'apFont': ['"Work Sans"', 'sans-serif']
+        'apFont': ['"Inter"', 'sans-serif']
       }
     },
     backdropFilter: {
