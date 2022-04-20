@@ -14,6 +14,7 @@
         <p class="font-apFont text-left text-lg font-semibold">
           Based on PHP / JS / TS / Go / Vue / Python <br/>
           Powered by Docker <br/>
+          Floating in DigitalOcean , Azure <br/>
         </p>
         <br/>
         <p class="font-apFont text-left text-lg text-green-700">
@@ -21,16 +22,8 @@
         </p>
         <br/>
         <p class="font-apFont text-left">
-          <b class="text-lg">Projects on Hand</b> <br/>
-          - Social-related Project Management (NestJS / TypeScript / Docker / MinIO / ElasticSearch) <br/>
-          - Staff Management System (PHP / Microsoft SQL Server)
-        </p>
-        <br/>
-        <p class="font-apFont text-left">
-          <b class="text-lg">English Proficiency Examination</b> <br/>
-          - TOEIC : Unavailable <br/>
-          - IELTS : Unavailable <br/>
-          - CEFR : A2
+          <b class="text-lg">Projects</b> <br/>
+          <p v-for="info in prjOnHands" class="text-sm">✨ {{ info }}<p> <br/>
         </p>
       </div>
     </section>
@@ -45,7 +38,13 @@ export default {
       imageProfile: 'https://avatars.githubusercontent.com/u/10544462?v=4',
       logo:{
         long: require('assets/images/logo/logo-ap-long.png')
-      }
+      },
+      prjOnHands:[
+        "Social-related Project Management (NestJS / TypeScript / Docker / MinIO / ElasticSearch / Facebook Graph API / Instagram Graph API)",
+        "Staff Management System (PHP (Laravel)/ Microsoft SQL Server)",
+        "Photo Album Wizard Web Application (PHP (Laravel)/ Vue / MinIO)",
+        "Check-in and Mini-Social Web Application (PHP (Laravel)/ Azure Cloud (Blob Storage / Web))",
+      ]
     }
   }
 }
@@ -71,7 +70,7 @@ export default {
 }
 
 .imageProfile {
-  @apply object-cover xl:rounded-2xl lg:rounded-2xl sm:rounded-2xl 2xl:rounded-3xl rounded-2xl 2xl:w-5/12 2xl:mt-10 xl:w-5/12 xl:mt-10 lg:w-5/12 lg:mt-10 md:w-5/12 md:mt-9 sm:w-5/12 sm:mt-8 w-80
+  @apply object-cover xl:rounded-2xl lg:rounded-2xl sm:rounded-2xl 2xl:rounded-3xl rounded-2xl 2xl:w-5/12 2xl:mt-10 xl:w-5/12 xl:mt-10 lg:w-5/12 lg:mt-10 md:w-5/12 md:mt-9 sm:w-5/12 sm:mt-8 w-80 drop-shadow-lg origin-center rotate-6 hover:rotate-0
 }
 
 .custom-hr {

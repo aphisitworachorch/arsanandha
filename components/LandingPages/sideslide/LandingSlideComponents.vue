@@ -4,7 +4,7 @@
       <div class="logo">
         <!--            <kinesis-container>-->
         <!--              <kinesis-element type="depth" :strength="25">-->
-        <img :src="img.square" alt="arsanandha.xyz Logo" class="w-36 h-36"/>
+        <img :src="img.square" alt="arsanandha.xyz Logo" class="w-36 h-36 origin-center rotate-6"/>
 <!--        <img :src="img.long" alt="arsanandha.xyz Logo"/>-->
         <!--              </kinesis-element>-->
         <!--            </kinesis-container>-->
