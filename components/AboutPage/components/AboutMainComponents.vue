@@ -3,7 +3,8 @@
     <IntroComponents></IntroComponents>
     <div class="items-center pb-2.5 pt-5"></div>
     <WorkExperienceComponents></WorkExperienceComponents>
-
+    <div class="items-center pb-2.5 pt-5"></div>
+    <ExtracurricularComponents></ExtracurricularComponents>
   </div>
 </template>
 

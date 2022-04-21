@@ -56,6 +56,24 @@ export default {
           "color":"bg-blue-900",
           "negative":false,
           "white_fonts":true
+        },
+        {
+          "name":"Suranivet 7 Dormitory Committee",
+          "from":DateTime.local(2017,6,3,9,0,0).toISODate(),
+          "to":DateTime.local(2019,6,10,19,0,0).toISODate(),
+          "position":"Public Relations / Technology",
+          "color":"bg-green-900",
+          "negative":false,
+          "white_fonts":true
+        },
+        {
+          "name":"SUT Student Council",
+          "from":DateTime.local(2018,7,1,9,0,0).toISODate(),
+          "to":DateTime.local(2020,4,1,19,0,0).toISODate(),
+          "position":"Public Relations / Technology",
+          "color":"bg-orange-900",
+          "negative":false,
+          "white_fonts":true
         }
       ]
     }

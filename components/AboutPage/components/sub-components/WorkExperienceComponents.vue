@@ -89,13 +89,13 @@ export default {
         {
           "name":"ApplicationDD",
           "from":DateTime.local(2021,6,1,10,0,0).toISODate(),
-          "to":"Present",
+          "to":DateTime.local(2022,6,1,10,0,0).toISODate(),
           "position":"Backend Developers",
           "color":"bg-red-700",
           "negative":false,
           "img_logo":"https://www.applicationdd.com/img/logo_edit_b.png",
           "white_fonts":true,
-          "month": DateTime.now().diff(DateTime.local(2021,6,1,10,0,0),["years", "months", "days", "hours"]).toObject()
+          "month": DateTime.local(2022,6,1,10,0,0).diff(DateTime.local(2021,6,1,10,0,0),["years", "months", "days", "hours"]).toObject()
         }
       ]
     }
