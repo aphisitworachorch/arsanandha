@@ -99,7 +99,7 @@ export default {
         },
         {
           "name":"CommonGround",
-          "from":DateTime.local(2021,6,1,10,0,0).toISODate(),
+          "from":DateTime.local(2022,6,1,10,0,0).toISODate(),
           "to":DateTime.now().toISODate(),
           "position":"Backend Developers",
           "color":"bg-yellow-700",
