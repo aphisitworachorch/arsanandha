@@ -106,7 +106,7 @@ export default {
           "negative":true,
           "img_logo":"https://www.iamcommonground.com/wp-content/uploads/2022/02/COMMONGROUND-LOGO.png",
           "white_fonts":true,
-          "month": DateTime.local(2022,6,1,10,0,0).diff(DateTime.now(),["years", "months", "days", "hours"]).toObject()
+          "month": DateTime.now().diff(DateTime.local(2022,6,1,10,0,0),["years", "months", "days", "hours"]).toObject()
         }
       ]
     }

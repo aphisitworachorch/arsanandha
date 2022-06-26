@@ -21,7 +21,9 @@ export default {
         require('assets/images/slider/slider-9-spn.jpg'),
         require('assets/images/slider/slider-12-coop.jpg'),
         require('assets/images/workplace/IMG_4051.jpg'),
-        require('assets/images/extra-c/IMG_20190720_184441.jpg')
+        require('assets/images/extra-c/IMG_20190720_184441.jpg'),
+        'https://unsplash.com/photos/I0-lZJ2BBCU/download?ixid=MnwxMjA3fDB8MXxhbGx8MXx8fHx8fDJ8fDE2NTYyMjk0MzY&force=true&w=1920',
+        'https://unsplash.com/photos/G6jti369paE/download?ixid=MnwxMjA3fDB8MXxhbGx8Mnx8fHx8fDJ8fDE2NTYyMjk0MzY&force=true&w=1920'
       ],
       photoCaption:[
         'Dormitory Committee (2018)',
@@ -29,7 +31,9 @@ export default {
         'Photo with Sippanondha Camp Friends (2017)',
         'Co-operative Education with Friends and Employee (2020)',
         'Photo with Friends at (Waan ^ D) with ApplicationDD Friends (2021)',
-        'Photo with Katakorn 4'
+        'Photo with Katakorn 4',
+        'Unsplash Photo (Taken by ARSANANDHA) (Suranapha Tower)',
+        'Unsplash Photo (Taken by ARSANANDHA) (God Blessing)'
       ],
       randomPosition:null
     }

@@ -9,7 +9,7 @@ export default {
   name: "about",
   components: {AboutMain},
   head:{
-    title:'arsanandha.xyz',
+    title:'About arsanandha.xyz',
     meta:[
       ...createSEOMeta({
         author: "Arsanandha Aphisitworachorch",

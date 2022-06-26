@@ -7,16 +7,18 @@
     </section>
     <br/>
     <section class="right-logo">
+      <h1 v-if="finishedTypeShow" class="head-text-landing">{{ typedText[0] }}</h1>
+      <br/>
       <vue-typed-js :strings="typedText" class="big-text-landing" @onComplete="finishedTypeShow = true">
         <h1 class="big-text-landing typing"></h1>
       </vue-typed-js>
-      <br/>
-      <h4 v-if="finishedTypeShow" class="small-text-timer">
-        <span v-if="dateInformation.remain.months !== 0">{{ dateInformation.remain.months }} Months </span> <br/>
-        <span v-if="dateInformation.remain.days !== 0">{{ dateInformation.remain.days }} Days <br/></span>
-        <span v-if="dateInformation.remain.hours !== 0">{{ dateInformation.remain.hours }} Hours <br/></span>
-        <span v-if="dateInformation.remain.minutes !== 0">{{ dateInformation.remain.minutes }} Minutes</span>
-      </h4>
+<!--      <br/>-->
+<!--      <h4 v-if="finishedTypeShow" class="small-text-timer">-->
+<!--        <span v-if="dateInformation.remain.months !== 0">{{ dateInformation.remain.months }} Months </span> <br/>-->
+<!--        <span v-if="dateInformation.remain.days !== 0">{{ dateInformation.remain.days }} Days <br/></span>-->
+<!--        <span v-if="dateInformation.remain.hours !== 0">{{ dateInformation.remain.hours }} Hours <br/></span>-->
+<!--        <span v-if="dateInformation.remain.minutes !== 0">{{ dateInformation.remain.minutes }} Minutes</span>-->
+<!--      </h4>-->
       <br/>
       <p v-if="finishedTypeShow" class="font-apFont text-left font-light">(C) 2021 Arsanandha Aphisitworachorch (arsanandha.xyz)</p>
       <p v-if="finishedTypeShow" class="font-apFont text-left font-light">{{ caption }}</p>
@@ -36,6 +38,14 @@ export default {
     VueTypedJs
   },
   props:['caption'],
+  async fetch(){
+    const dataBible = await this.$axios.$get('https://labs.bible.org/api/?passage=votd&type=json');
+    const bibleFormatter = dataBible.shift();
+    if (bibleFormatter) {
+      this.typedText[0] = bibleFormatter['bookname'] + " " + bibleFormatter['chapter'] + ":" + bibleFormatter['verse'];
+      this.typedText[1] = bibleFormatter['text'];
+    }
+  },
   data: function(){
     return {
       img: {
@@ -53,12 +63,12 @@ export default {
           minutes:""
         }
       },
-      typedText:[':)','see you at',`${openDate.setLocale('en-US').toLocaleString(DateTime.DATETIME_FULL)}`]
+      typedText:["John 3:16","For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."]
     }
   },
   methods:{
     birthDay: function(){
-      let dateTG = openDate.diff(nowDate,["months", "days", "hours", "minutes"]);
+      let dateTG = nowDate.diff(openDate,["months", "days", "hours", "minutes"]);
       this.dateInformation.remain.months = dateTG.months;
       this.dateInformation.remain.days = dateTG.days;
       this.dateInformation.remain.hours = dateTG.hours.toPrecision(2);
@@ -96,6 +106,10 @@ export default {
 
 .big-text-landing {
   @apply text-3xl font-bold font-apFont text-left
+}
+
+.head-text-landing {
+  @apply text-4xl font-bold font-apFont text-left
 }
 
 .small-text-timer {
