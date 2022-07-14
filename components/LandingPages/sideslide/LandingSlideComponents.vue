@@ -39,6 +39,7 @@ export default {
   },
   props:['caption'],
   async fetch(){
+    let fetchTime = null;
     const dataBible = await this.$axios.$get('https://labs.bible.org/api/?passage=votd&type=json');
     const bibleFormatter = dataBible.shift();
     if (bibleFormatter) {
@@ -63,7 +64,7 @@ export default {
           minutes:""
         }
       },
-      typedText:["John 3:16","For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."]
+      typedText:[]
     }
   },
   methods:{
@@ -76,7 +77,7 @@ export default {
     }
   },
   mounted() {
-    this.birthDay();
+    //this.birthDay();
   }
 }
 </script>
