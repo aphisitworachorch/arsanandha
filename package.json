@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.0",
+    "@nuxtjs/vercel-builder": "^0.22.1",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/line-clamp": "^0.3.0",
