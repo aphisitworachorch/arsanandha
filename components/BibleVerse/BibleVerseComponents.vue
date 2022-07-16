@@ -2,7 +2,7 @@
   <main class="mainLanding">
     <div class="items-center" v-if="!hidden">
       <h1 class="text-white text-3xl font-bibleFont text-center p-3">Bible Verse Show ✝️✨</h1>
-      <select class="form-select rounded font-bibleFont" v-model="bibleData.bible" @change="getBibleBooks">
+      <select class="selectClass font-bibleFont" v-model="bibleData.bible" @change="getBibleBooks">
         <option class="font-bibleFont" value="null" disabled>
           เลือก Bible
         </option>
@@ -10,7 +10,7 @@
           {{ bb['name']}}
         </option>
       </select>
-      <select class="form-select rounded font-bibleFont" v-model="bibleData.book" @change="getBibleChapters">
+      <select class="selectClass font-bibleFont" v-model="bibleData.book" @change="getBibleChapters">
         <option class="font-bibleFont" value="null" disabled>
           เลือก Books
         </option>
@@ -18,7 +18,7 @@
           {{ bk['name'] }}
         </option>
       </select>
-      <select class="form-select rounded font-bibleFont" v-model="bibleData.chapter" @change="getBibleVerses">
+      <select class="selectClass font-bibleFont" v-model="bibleData.chapter" @change="getBibleVerses">
         <option class="font-bibleFont" value="null" disabled>
           เลือก Chapter
         </option>
@@ -26,7 +26,7 @@
           {{ ct['number'] }}
         </option>
       </select>
-      <select class="form-select rounded font-bibleFont" v-model="bibleData.verse[0]">
+      <select class="selectClass font-bibleFont" v-model="bibleData.verse[0]">
         <option class="font-bibleFont" value="null" disabled>
           เลือก Verse
         </option>
@@ -35,7 +35,7 @@
         </option>
       </select>
       ถึง
-      <select class="form-select rounded font-bibleFont" v-model="bibleData.verse[1]" @change="getBibleText">
+      <select class="selectClass font-bibleFont" v-model="bibleData.verse[1]" @change="getBibleText">
         <option value="null" disabled>
           เลือก Verse
         </option>
@@ -43,17 +43,17 @@
           {{ index+1 }}
         </option>
       </select>
-      <button class="btn bg-blue-600 text-white rounded p-2.5" v-if="bibleData.verse[1] != null" @click="hidden = true">
+      <button class="btn selectClass" v-if="bibleData.verse[1] != null" @click="hidden = true">
         ซ่อนตัวเลือก
       </button>
     </div>
     <br/>
     <div class="container p-20">
-      <div class="container items-center text-6xl font-medium font-bibleFont leading-loose text-white">
+      <div class="container items-center text-6xl font-bold font-bibleFont leading-loose text-white">
         {{ bibleData.verseWord }}
       </div>
       <br/>
-      <div class="container items-center text-4xl font-bold font-bibleFont leading-loose text-white">
+      <div class="container items-center text-4xl font-medium font-bibleFont leading-loose text-white">
         {{ bibleData.text['content'] }}
       </div>
     </div>
@@ -143,5 +143,8 @@ export default {
 }
 body {
   @apply bg-black text-white
+}
+.selectClass{
+  @apply bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
 }
 </style>
