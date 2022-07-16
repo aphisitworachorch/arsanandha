@@ -64,7 +64,7 @@ export default {
           minutes:""
         }
       },
-      typedText:[]
+      typedText:["God Bless You :)"]
     }
   },
   methods:{

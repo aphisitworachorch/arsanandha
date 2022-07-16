@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'apFont': ['"Inter"', 'sans-serif']
+        'apFont': ['"Inter"', 'sans-serif'],
+        'bibleFont': ['"IBM Plex Sans Thai Looped"', 'sans-serif']
       }
     },
     backdropFilter: {
