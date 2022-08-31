@@ -12,6 +12,9 @@ module.exports = {
       'blur': 'blur(20px)',
     },
   },
+  daisyui: {
+    themes: ["forest"],
+  },
   variants: {
     extend: {},
   },
@@ -34,5 +37,6 @@ module.exports = {
     require("@tailwindcss/forms")({
       strategy: 'class',
     }),
+    require("daisyui")
   ],
 }
