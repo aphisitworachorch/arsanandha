@@ -82,7 +82,7 @@
           <div class="-mx-3 md:flex mb-6">
             <div class="md:w-1/2 px-3 mb-4 md:mb-0">
               <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="social_url">
-                Social URL
+                Facebook URL
               </label>
               <input class="appearance-none block w-full text-black border border-red rounded py-3 px-4 mb-3" id="social_url" v-model="register.additional.social_link" type="text">
             </div>
