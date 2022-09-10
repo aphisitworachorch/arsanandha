@@ -31,7 +31,8 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/vue-kinesis.js',
-    '~/plugins/vue-typed.js'
+    '~/plugins/vue-typed.js',
+    '~/plugins/vue-excel.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
